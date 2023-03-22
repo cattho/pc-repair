@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://res.cloudinary.com/dfp8qduho/image/upload/v1652480742/avcs7bza1nelzsnuvpyl.png">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Reparación de computadoras</title>
+</head>
+
+<body>
+    <div class="white-theme" id="select-theme">
+        <header>
+            <button onclick="setTheme()" class="btn-theme">theme</button>
+            <div class="hero">
+                <h1>Servicios de reparación de computadores</h1>
+                <p>Más de diez años de experiencia a su servicio</p>
+            </div>
+        </header>
+
+        <section class="servicios" id="servicios">
+            <h1>Nuestros servicios</h1>
+            <div class="servicios-container">
+                <div class="servicio-white">
+                    <img src="https://images.unsplash.com/photo-1591238372408-8b98667c0460?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Reparacion">
+                    <h3>Reparación de hardware y software</h3>
+                    <p>Reparamos cualquier problema de hardware o software en tu computadora, laptop o impresora.</p>
+                </div>
+                <div class="servicio-white">
+                    <img src="https://images.unsplash.com/photo-1640955014216-75201056c829?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                        alt="Icono de optimización">
+                    <h3>Optimización de rendimiento</h3>
+                    <p>Mejoramos el rendimiento de tu computadora y la hacemos más rápida.</p>
+                </div>
+                <div class="servicio-white">
+                    <img src="https://images.unsplash.com/flagged/photo-1560854350-13c0b47a3180?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1142&q=80"
+                        alt="Icono de eliminación de virus">
+                    <h3>Eliminación de virus</h3>
+                    <p>Eliminamos cualquier tipo de virus o malware en tu computadora.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="contact-form">
+                <h2>Contáctanos</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Dejanos un mensaje o describe el problema de tu maquina:</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" required minlength="15"></textarea>
+                    </div>
+                    <button type="submit" name="submit">Enviar</button>
+                </form>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <p>Derechos reservados © 2023 | <a href="https://sebastianportfolio.vercel.app" target="_blank">Juan
+                    Sebastian
+                    Giraldo Varon</a></p>
+        </footer>
+
+        <a href="https://wa.me/3204453950" target="_blank" class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+
+        <script src="script.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init('4a_t1ywigblUCWup0');
+            })();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+    </div>
+</body>
+
+</html>
