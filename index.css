@@ -6,15 +6,9 @@
   user-select: none;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .white-theme {
-  background: #F9F9F9;
-  color: #202020;
+  background: #FAF7F5;
+  color: #291334;
   transition: all 0.5s ease;
 }
 
@@ -22,129 +16,58 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #FFB900;
-  background: #202020;
+  color: #fff;
+  background: #282A36;
   transition: all 0.5s ease;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Estilos para el header */
-
-header {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav {
-  justify-content: flex-start;
-  width: 100%;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-left: 1.5em;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-.hero p {
-  font-size: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.btn:hover {
-  background-color: #555;
-}
-
 /* Estilos para los servicios */
+
 .servicios {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .servicios h1 {
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+.servicios p{
+  text-align: justify;
+  margin: 15px 8px;
 }
 
 .servicios-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 12rem;
 }
 
-.servicio-white {
-  max-width: 300px;
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  margin: 0 10px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.card {
+  padding: .5rem;
   transition: all 0.3s ease;
 }
 
-.servicio-white:hover {
+.card:hover {
   transform: translateY(-10px);
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.servicio-white h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
 }
 
-.servicio-white p {
-  font-size: 16px;
+.card p {
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
-.servicio-white img {
-  width: 100%;
-  height: 20rem;
+figure {
+  height: 13rem;
   object-fit: cover;
 }
 
@@ -207,7 +130,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #333333;
+  background-color: #FF79C6;
   color: #FFFFFF;
 }
 
@@ -231,27 +154,8 @@ button[type="submit"]:hover {
 }
 
 .btn-theme {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: #FFFFFF;
-  color: #333333;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.btn-theme:hover,
-.btn-theme:focus {
-  background-color: #333333;
-  color: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 0;
 }
 
 footer {
@@ -289,6 +193,8 @@ footer a {
 
   .servicios-container {
     flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .servicio-white {
